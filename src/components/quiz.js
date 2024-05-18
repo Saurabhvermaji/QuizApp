@@ -132,6 +132,7 @@ const Quiz = () => {
                 }
             </div>
             <button onClick={changeQuestion} className="changeQuestion">Next</button>
+            <h1>Hello</h1>
         </div>
     );
 };
