@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Saurabhvermaji/QuizApp/static/css/main.64c14107.css",
-    "main.js": "/Saurabhvermaji/QuizApp/static/js/main.1eb9118d.js",
+    "main.js": "/Saurabhvermaji/QuizApp/static/js/main.a7b8b9d7.js",
     "index.html": "/Saurabhvermaji/QuizApp/index.html",
     "main.64c14107.css.map": "/Saurabhvermaji/QuizApp/static/css/main.64c14107.css.map",
-    "main.1eb9118d.js.map": "/Saurabhvermaji/QuizApp/static/js/main.1eb9118d.js.map"
+    "main.a7b8b9d7.js.map": "/Saurabhvermaji/QuizApp/static/js/main.a7b8b9d7.js.map"
   },
   "entrypoints": [
     "static/css/main.64c14107.css",
-    "static/js/main.1eb9118d.js"
+    "static/js/main.a7b8b9d7.js"
   ]
 }
