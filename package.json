@@ -21,7 +21,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/Saurabhvermaji/QuizApp",
+  "homepage": "https://saurabhvermaji.github.io/QuizApp/",
   "eslintConfig": {
     "extends": [
       "react-app",
