@@ -117,22 +117,31 @@ const Quiz = () => {
         dispatch(setSelectedOption(e.target.textContent))
     };
 
+    const handleQuizShow = (e) => {
+        var quizContainer = document.querySelector('.quizContainer')
+        quizContainer.style.display = 'block';
+        e.target.style.display = 'none'
+    }
+
     return (
-        <div className="quizContainer">
-            <div className="QuizHeadingSection">
-                <h4>Welcome To Ben 10 Quiz</h4>
-                <p>{questions[currentQuestionIndex].questionNumber}/10</p>
+        <>
+            <button onClick={handleQuizShow} id="startquiz">Start Quiz</button>
+            <div className="quizContainer">
+                <div className="QuizHeadingSection">
+                    <h4>Welcome To Ben 10 Quiz</h4>
+                    <p>{questions[currentQuestionIndex].questionNumber}/10</p>
+                </div>
+                <p>{questions[currentQuestionIndex].question}</p>
+                <div className="questionContainer">
+                    {
+                        questions[currentQuestionIndex].options.map((option, index) => (
+                            <p key={index} onClick={handleClick}>{option}</p>
+                        ))
+                    }
+                </div>
+                <button onClick={changeQuestion} className="changeQuestion">Next</button>
             </div>
-            <p>{questions[currentQuestionIndex].question}</p>
-            <div className="questionContainer">
-                {
-                    questions[currentQuestionIndex].options.map((option, index) => (
-                        <p key={index} onClick={handleClick}>{option}</p>
-                    ))
-                }
-            </div>
-            <button onClick={changeQuestion} className="changeQuestion">Next</button>
-        </div>
+        </>
     );
 };
 

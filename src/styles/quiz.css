@@ -1,4 +1,23 @@
+#startquiz {
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 5px;
+}
+
+#startquiz:hover {
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid black;
+}
+
 .quizContainer {
+    display: none;
     max-width: 700px;
     margin: 10px auto;
     padding: 10px;
