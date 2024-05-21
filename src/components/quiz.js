@@ -97,7 +97,7 @@ const Quiz = () => {
 
         var pElements = document.querySelectorAll('.questionContainer p');
         var correctAnswer = questions[currentQuestionIndex].correctAnswer;
-        var selectedAnswer = e.target.textContent;
+        var selectedOption = e.target.textContent;
 
         pElements.forEach((p) => {
             if (p.textContent !== correctAnswer) {
@@ -110,7 +110,7 @@ const Quiz = () => {
 
         dispatch(setStopUnexpectedScoreCount(true));
 
-        if (selectedAnswer === correctAnswer) {
+        if (selectedOption === correctAnswer) {
             dispatch(setScore(score + 1));
         }
 
